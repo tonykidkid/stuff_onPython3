@@ -1,0 +1,304 @@
+ * Serving Flask app "hello_flask.py"
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://10.4.94.129:8080/ (Press CTRL+C to quit)
+10.4.94.129 - - [27/Jun/2019 11:43:44] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:31 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:43:54] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-19%2021:05:31 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:44:02] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:31 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:44:02] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:31 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:44:09] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:30 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:44:11] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:29 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:55:42] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:29 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:55:53] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-20%2021:05:31 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:56:24] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-26%2021:05:31 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:56:33] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-24%2021:05:30&to=2019-06-26%2021:05:31 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:56:43] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-25%2021:05:30&to=2019-06-26%2021:05:31 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 11:56:59] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-24%2021:05:30&to=2019-06-26%2021:05:31 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:56:59] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-24%2021:05:30&to=2019-06-26%2021:05:31 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 11:57:03] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-24%2021:05:30&to=2019-06-26%2021:05:30 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 17:40:34] "GET / HTTP/1.1" 200 -
+10.4.82.80 - - [27/Jun/2019 17:40:59] "GET / HTTP/1.1" 200 -
+10.4.82.80 - - [27/Jun/2019 17:40:59] "GET /favicon.ico HTTP/1.1" 404 -
+10.4.94.129 - - [27/Jun/2019 17:41:46] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-22%2021:05:30 HTTP/1.1" 201 -
+10.4.82.80 - - [27/Jun/2019 17:53:18] "GET / HTTP/1.1" 200 -
+
+==== 所有已接入Pinpoint的应用列表 ====
+ ['HPS_APP_CONSUMER', 'HPS_APP_PROVIDER', 'HPS_OM_CONSUMER', 'HPS_OM_PROVIDER-ALARM', 'HPS_OM_PROVIDER-PLATFORM', 'bigdata_app_api_test', 'bigdata_metadata_test', 'cim-base-service-test', 'cim-date-service-test', 'cim-zuul-service-test', 'devops_monitor_service', 'energy-consumer-app-dev', 'energy-consumer-app-te', 'energy-consumer-dada-te', 'energy-consumer-web-dev', 'energy-consumer-web-te', 'energy-external-web-dev', 'energy-external-web-te', 'energy-pm-dev', 'energy-pm-test', 'energy-provider-bus-te', 'energy-provider-pas-te', 'energy-provider-sys-te', 'energy-provider-system', 'energy-zuul-gateway-dev', 'energy-zuul-gateway-te', 'energy-zuul-gateway-test', 'etsp-service-cust', 'pinpoint_app_iot_unkonw', 'ues_wechat', 'ugmdp-api']
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-20 21:05:31的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有2条
+devops_monitor_service的下游有1个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-20 21:05:31的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有2条
+devops_monitor_service的下游有1个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-20 21:05:31的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有2条
+devops_monitor_service的下游有1个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-20 21:05:30的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有2条
+devops_monitor_service的下游有1个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-20 21:05:31的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有2条
+devops_monitor_service的下游有1个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-25 21:05:30到2019-06-26 21:05:31的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有4条
+devops_monitor_service的下游有3个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 855, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'oapi.dingtalk.com', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'monitor_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 39, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 339, '上游错误请求次数': 3, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-24 21:05:30到2019-06-26 21:05:30的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有4条
+devops_monitor_service的下游有3个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1716, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'oapi.dingtalk.com', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 7, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'monitor_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 85, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 658, '上游错误请求次数': 6, '上游慢请求数': 3}]
+
+《应用 devops_monitor_service 从 2019-06-20 21:05:30到2019-06-22 21:05:30的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有4条
+devops_monitor_service的下游有3个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1728, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'oapi.dingtalk.com', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 11, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'monitor_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 41, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 593, '上游错误请求次数': 3, '上游慢请求数': 1}]
+
+《应用 HPS_APP_CONSUMER 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用HPS_APP_CONSUMER相连的调用链共有3条
+HPS_APP_CONSUMER的下游有2个应用，它们是:
+[{'下游应用名': 'HPS_APP_PROVIDER', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 349, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': 'uac-backend-fnw-test.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 225, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+HPS_APP_CONSUMER的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 645, '上游错误请求次数': 1, '上游慢请求数': 1}]
+
+《应用 HPS_APP_PROVIDER 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用HPS_APP_PROVIDER相连的调用链共有10条
+HPS_APP_PROVIDER的下游有9个应用，它们是:
+[{'下游应用名': 'provider-crm-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'uac-backend-fnw-test.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 478, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'open.ys7.com', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 2, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': 'provider-cim-business-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 25, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'bigdata-api-fnw-dev.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 22, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'HPS_OM_PROVIDER-PLATFORM', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 34, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'hps_app', '下游应用类型': 'MYSQL', '请求下游的总次数': 151, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'cim-zuul-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 43, '对下游的错误请求数': 1, '对下游的慢请求数': 0}, {'下游应用名': 'REDIS', '下游应用类型': 'REDIS', '请求下游的总次数': 12, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+HPS_APP_PROVIDER的上游有1个应用，它们是:
+[{'上游应用': 'HPS_APP_CONSUMER', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 349, '上游错误请求次数': 1, '上游慢请求数': 1}]
+
+《应用 HPS_OM_CONSUMER 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用HPS_OM_CONSUMER相连的调用链共有3条
+HPS_OM_CONSUMER的下游有2个应用，它们是:
+[{'下游应用名': 'HPS_OM_PROVIDER-ALARM', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'HPS_OM_PROVIDER-PLATFORM', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+HPS_OM_CONSUMER的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 4, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 HPS_OM_PROVIDER-ALARM 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用HPS_OM_PROVIDER-ALARM相连的调用链共有3条
+HPS_OM_PROVIDER-ALARM的下游有1个应用，它们是:
+[{'下游应用名': 'wit-operation', '下游应用类型': 'MYSQL', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+HPS_OM_PROVIDER-ALARM的上游有2个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'HPS_OM_CONSUMER', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 3, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 HPS_OM_PROVIDER-PLATFORM 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用HPS_OM_PROVIDER-PLATFORM相连的调用链共有3条
+HPS_OM_PROVIDER-PLATFORM的下游有1个应用，它们是:
+[{'下游应用名': 'wit-operation', '下游应用类型': 'MYSQL', '请求下游的总次数': 39, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+HPS_OM_PROVIDER-PLATFORM的上游有2个应用，它们是:
+[{'上游应用': 'HPS_APP_PROVIDER', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 34, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'HPS_OM_CONSUMER', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 bigdata_app_api_test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用bigdata_app_api_test相连的调用链共有13条
+bigdata_app_api_test的下游有11个应用，它们是:
+[{'下游应用名': 'pvs-datadb', '下游应用类型': 'MYSQL', '请求下游的总次数': 12, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'bigdata_portal_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 1528952, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'uee', '下游应用类型': 'MYSQL', '请求下游的总次数': 271, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': '10.39.48.33:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 11, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'data-collector', '下游应用类型': 'MYSQL', '请求下游的总次数': 302325, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'cim-zuul-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 51853, '对下游的错误请求数': 0, '对下游的慢请求数': 10}, {'下游应用名': 'dw', '下游应用类型': 'MYSQL', '请求下游的总次数': 1220, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'os-ues', '下游应用类型': 'MYSQL', '请求下游的总次数': 24, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'formula', '下游应用类型': 'MYSQL', '请求下游的总次数': 115643, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.39.48.29:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3790, '对下游的错误请求数': 0, '对下游的慢请求数': 4}, {'下游应用名': 'datadb', '下游应用类型': 'MYSQL', '请求下游的总次数': 197, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+bigdata_app_api_test的上游有2个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 136179, '上游错误请求次数': 4, '上游慢请求数': 13}, {'上游应用': 'energy-provider-bus-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 16998, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 bigdata_metadata_test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用bigdata_metadata_test相连的调用链共有2条
+bigdata_metadata_test的下游有1个应用，它们是:
+[{'下游应用名': 'bigdata_portal_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 34, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+bigdata_metadata_test的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 23, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 cim-base-service-test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用cim-base-service-test相连的调用链共有6条
+cim-base-service-test的下游有4个应用，它们是:
+[{'下游应用名': 'basedata', '下游应用类型': 'MYSQL', '请求下游的总次数': 577168, '对下游的错误请求数': 0, '对下游的慢请求数': 4}, {'下游应用名': 'REDIS', '下游应用类型': 'REDIS', '请求下游的总次数': 6354426, '对下游的错误请求数': 0, '对下游的慢请求数': 4}, {'下游应用名': 'exchange-cim_device_exchange', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 30, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-Unknown', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 564, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+cim-base-service-test的上游有2个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 45, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'cim-zuul-service-test', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 647839, '上游错误请求次数': 25, '上游慢请求数': 104}]
+
+《应用 cim-date-service-test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用cim-date-service-test相连的调用链共有4条
+cim-date-service-test的下游有3个应用，它们是:
+[{'下游应用名': 'basedata', '下游应用类型': 'MYSQL', '请求下游的总次数': 489, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-cim_device_exchange', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 22, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-Unknown', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 132, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+cim-date-service-test的上游有1个应用，它们是:
+[{'上游应用': 'cim-zuul-service-test', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 31, '上游错误请求次数': 4, '上游慢请求数': 0}]
+
+《应用 cim-zuul-service-test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用cim-zuul-service-test相连的调用链共有10条
+cim-zuul-service-test的下游有4个应用，它们是:
+[{'下游应用名': 'cim-date-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 31, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.4.94.92:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 75, '对下游的错误请求数': 4, '对下游的慢请求数': 0}, {'下游应用名': 'cim-base-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 647750, '对下游的错误请求数': 36, '对下游的慢请求数': 124}, {'下游应用名': '10.4.93.23:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 370, '对下游的错误请求数': 1, '对下游的慢请求数': 4}]
+cim-zuul-service-test的上游有6个应用，它们是:
+[{'上游应用': 'energy-provider-bus-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 2157, '上游错误请求次数': 11, '上游慢请求数': 0}, {'上游应用': 'HPS_APP_PROVIDER', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 43, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 604004, '上游错误请求次数': 230, '上游慢请求数': 121}, {'上游应用': 'bigdata_app_api_test', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 51845, '上游错误请求次数': 0, '上游慢请求数': 10}, {'上游应用': 'energy-pm-test', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 272, '上游错误请求次数': 5, '上游慢请求数': 0}, {'上游应用': 'energy-external-web-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 3, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 devops_monitor_service 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用devops_monitor_service相连的调用链共有4条
+devops_monitor_service的下游有3个应用，它们是:
+[{'下游应用名': '10.39.46.4:8086', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 864, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'oapi.dingtalk.com', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'monitor_test', '下游应用类型': 'MYSQL', '请求下游的总次数': 40, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+devops_monitor_service的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 316, '上游错误请求次数': 3, '上游慢请求数': 3}]
+
+《应用 energy-consumer-app-dev 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-consumer-app-dev相连的调用链共有1条
+energy-consumer-app-dev的下游有0个应用，它们是:
+[]
+energy-consumer-app-dev的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 energy-consumer-app-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-consumer-app-te相连的调用链共有2条
+energy-consumer-app-te的下游有1个应用，它们是:
+[{'下游应用名': 'energy-zuul-gateway-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 111, '对下游的错误请求数': 1, '对下游的慢请求数': 1}]
+energy-consumer-app-te的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 60, '上游错误请求次数': 1, '上游慢请求数': 0}]
+
+《应用 energy-consumer-dada-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-consumer-dada-te相连的调用链共有0条
+energy-consumer-dada-te的下游有0个应用，它们是:
+[]
+energy-consumer-dada-te的上游有0个应用，它们是:
+[]
+
+《应用 energy-consumer-web-dev 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-consumer-web-dev相连的调用链共有1条
+energy-consumer-web-dev的下游有0个应用，它们是:
+[]
+energy-consumer-web-dev的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 energy-consumer-web-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-consumer-web-te相连的调用链共有11条
+energy-consumer-web-te的下游有10个应用，它们是:
+[{'下游应用名': 'exchange-energy-user-behavior', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 3796, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': '10.4.92.104:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 32, '对下游的错误请求数': 8, '对下游的慢请求数': 0}, {'下游应用名': 'energy-zuul-gateway-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 10494, '对下游的错误请求数': 165, '对下游的慢请求数': 1}, {'下游应用名': '10.233.140.191:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 4, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'provider-common-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 9, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.233.105.79:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 279, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': 'energy-nginx-fnw-test.tipaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 8210, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': 'REDIS', '下游应用类型': 'REDIS', '请求下游的总次数': 80, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'energy-service-zuul-gateway-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.233.50.236:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 16, '对下游的错误请求数': 1, '对下游的慢请求数': 0}]
+energy-consumer-web-te的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 4790, '上游错误请求次数': 95, '上游慢请求数': 67}]
+
+《应用 energy-external-web-dev 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-external-web-dev相连的调用链共有0条
+energy-external-web-dev的下游有0个应用，它们是:
+[]
+energy-external-web-dev的上游有0个应用，它们是:
+[]
+
+《应用 energy-external-web-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-external-web-te相连的调用链共有3条
+energy-external-web-te的下游有2个应用，它们是:
+[{'下游应用名': 'energy-zuul-gateway-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 66, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'cim-zuul-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+energy-external-web-te的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 42, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 energy-pm-dev 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-pm-dev相连的调用链共有1条
+energy-pm-dev的下游有0个应用，它们是:
+[]
+energy-pm-dev的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 energy-pm-test 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-pm-test相连的调用链共有18条
+energy-pm-test的下游有12个应用，它们是:
+[{'下游应用名': '10.39.40.5:9200', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1272, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.39.40.6:9200', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1273, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'REDIS', '下游应用类型': 'REDIS', '请求下游的总次数': 17404, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'project_manager_new', '下游应用类型': 'MYSQL', '请求下游的总次数': 679, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'cim-zuul-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 272, '对下游的错误请求数': 11, '对下游的慢请求数': 0}, {'下游应用名': 'energy-service-zuul-gateway-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 6, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-energy_user_behavier_exchange', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 1339, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.39.40.2:9200', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1274, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-energy_user_login_exchange', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 11, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'provider-crm-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'energy-zuul-gateway-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 1011, '对下游的错误请求数': 3, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-exchange-direct-pm-wechat-chat', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+energy-pm-test的上游有6个应用，它们是:
+[{'上游应用': 'exchange-energy_user_login_exchange', '上游应用类型': 'RABBITMQ_CLIENT', '上游访问总次数': 8, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'exchange-exchange-direct-pm-wechat-chat', '上游应用类型': 'RABBITMQ_CLIENT', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'exchange-energy_user_behavier_exchange', '上游应用类型': 'RABBITMQ_CLIENT', '上游访问总次数': 929, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'exchange-energy-user-behavior', '上游应用类型': 'RABBITMQ_CLIENT', '上游访问总次数': 2896, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'energy-zuul-gateway-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 13, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 2352, '上游错误请求次数': 14, '上游慢请求数': 2}]
+
+《应用 energy-provider-bus-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-provider-bus-te相连的调用链共有16条
+energy-provider-bus-te的下游有13个应用，它们是:
+[{'下游应用名': 'bigdata-api-fnw-release.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 65, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'provider-common-fnw-test.topaas.enncloud.cn:80', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 2, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'bigdata-api-validate-fnw-demo.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': '10.39.48.245:8080', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 2, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'REDIS', '下游应用类型': 'REDIS', '请求下游的总次数': 118635, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'exchange-amq.topic', '下游应用类型': 'RABBITMQ_CLIENT', '请求下游的总次数': 4, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'cim-zuul-service-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 2159, '对下游的错误请求数': 35, '对下游的慢请求数': 0}, {'下游应用名': 'ues_wechat', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 4, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'bigdata_app_api_test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 17000, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'energy-service-cim-fnw-test.topaas.enncloud.cn', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 4, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'uee', '下游应用类型': 'MYSQL', '请求下游的总次数': 85725, '对下游的错误请求数': 1, '对下游的慢请求数': 25}, {'下游应用名': '10.39.10.7:5555', '下游应用类型': 'UNKNOWN', '请求下游的总次数': 3, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'energy-zuul-gateway-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 604, '对下游的错误请求数': 0, '对下游的慢请求数': 0}]
+energy-provider-bus-te的上游有3个应用，它们是:
+[{'上游应用': 'energy-zuul-gateway-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 14569, '上游错误请求次数': 35, '上游慢请求数': 40}, {'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 4428, '上游错误请求次数': 1, '上游慢请求数': 0}, {'上游应用': 'exchange-cim_device_exchange', '上游应用类型': 'RABBITMQ_CLIENT', '上游访问总次数': 58, '上游错误请求次数': 0, '上游慢请求数': 0}]
+
+《应用 energy-provider-pas-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-provider-pas-te相连的调用链共有3条
+energy-provider-pas-te的下游有1个应用，它们是:
+[{'下游应用名': 'uee', '下游应用类型': 'MYSQL', '请求下游的总次数': 39170364, '对下游的错误请求数': 0, '对下游的慢请求数': 115}]
+energy-provider-pas-te的上游有2个应用，它们是:
+[{'上游应用': 'energy-zuul-gateway-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 1, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 1397860, '上游错误请求次数': 0, '上游慢请求数': 18808}]
+
+《应用 energy-provider-sys-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-provider-sys-te相连的调用链共有2条
+energy-provider-sys-te的下游有1个应用，它们是:
+[{'下游应用名': 'uee', '下游应用类型': 'MYSQL', '请求下游的总次数': 1636, '对下游的错误请求数': 1, '对下游的慢请求数': 0}]
+energy-provider-sys-te的上游有1个应用，它们是:
+[{'上游应用': 'energy-zuul-gateway-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 1014, '上游错误请求次数': 1, '上游慢请求数': 0}]
+
+《应用 energy-provider-system 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-provider-system相连的调用链共有0条
+energy-provider-system的下游有0个应用，它们是:
+[]
+energy-provider-system的上游有0个应用，它们是:
+[]
+
+《应用 energy-zuul-gateway-dev 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-zuul-gateway-dev相连的调用链共有1条
+energy-zuul-gateway-dev的下游有0个应用，它们是:
+[]
+energy-zuul-gateway-dev的上游有1个应用，它们是:
+[{'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 4, '上游错误请求次数': 3, '上游慢请求数': 0}]
+
+《应用 energy-zuul-gateway-te 从 2019-06-24 20:10:30到2019-06-25 20:10:30的调用链概况》
+
+与应用energy-zuul-gateway-te相连的调用链共有11条
+energy-zuul-gateway-te的下游有4个应用，它们是:
+[{'下游应用名': 'energy-provider-pas-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 1, '对下游的错误请求数': 0, '对下游的慢请求数': 1}, {'下游应用名': 'energy-provider-bus-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 14568, '对下游的错误请求数': 30, '对下游的慢请求数': 40}, {'下游应用名': 'energy-provider-sys-te', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 1015, '对下游的错误请求数': 0, '对下游的慢请求数': 0}, {'下游应用名': 'energy-pm-test', '下游应用类型': 'SPRING_BOOT', '请求下游的总次数': 13, '对下游的错误请求数': 0, '对下游的慢请求数': 1}]
+energy-zuul-gateway-te的上游有7个应用，它们是:
+[{'上游应用': 'energy-consumer-web-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 10501, '上游错误请求次数': 216, '上游慢请求数': 39}, {'上游应用': 'energy-external-web-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 67, '上游错误请求次数': 0, '上游慢请求数': 0}, {'上游应用': 'energy-pm-test', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 1011, '上游错误请求次数': 7, '上游慢请求数': 0}, {'上游应用': 'energy-provider-bus-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 604, '上游错误请求次数': 0, '上游慢请求数': 1}, {'上游应用': 'energy-consumer-app-te', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 111, '上游错误请求次数': 0, '上游慢请求数': 1}, {'上游应用': 'ues_wechat', '上游应用类型': 'SPRING_BOOT', '上游访问总次数': 14, '上游错误请求次数': 0, '上游慢请求数': 1}, {'上游其他应用': 'USER', '上游应用类型': 'USER', '上游访问总次数': 3502, '上游错误请求次数': 20, '上游慢请求数': 0}]10.4.82.80 - - [27/Jun/2019 17:54:13] "GET /ppEveryApplicationDetails?from=2019-06-24%2020:10:30&to=2019-06-25%2020:10:30 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 18:01:11] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-22%2021:05:30 HTTP/1.1" 201 -
+10.4.94.129 - - [27/Jun/2019 18:01:15] "GET / HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 18:02:11] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-20%2021:05:30&to=2019-06-23%2021:05:30 HTTP/1.1" 200 -
+10.4.94.129 - - [27/Jun/2019 18:02:35] "GET /getSingleAppDetails?app_name=devops_monitor_service&from=2019-06-23%2021:05:30&to=2019-06-25%2021:05:30 HTTP/1.1" 201 -
